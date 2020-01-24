@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fd5f966-d2f8-49e8-a481-f2f8da5f60b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artists-list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artists-unformatted.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/save-artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/save-artist.php" afterDir="false" />
     </list>
@@ -55,7 +56,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579270315751</updated>
-      <workItem from="1579270317578" duration="4981000" />
+      <workItem from="1579270317578" duration="5664000" />
+      <workItem from="1579873638797" duration="3232000" />
     </task>
     <servers />
   </component>
@@ -67,10 +69,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="550" y="157" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1579271532957" />
-    <state x="605" y="344" key="NewPhpFileDialog" timestamp="1579272436613">
+    <state x="605" y="344" key="NewPhpFileDialog" timestamp="1579876316189">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="605" y="344" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1579272436613" />
+    <state x="605" y="344" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1579876316189" />
     <state x="281" y="58" key="SettingsEditor" timestamp="1579271696641">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

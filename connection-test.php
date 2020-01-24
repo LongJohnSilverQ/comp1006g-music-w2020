@@ -6,10 +6,10 @@
 <body>
 <?php
 // aws
-//$db = new PDO('mysql:host=aws.computerstudi.es;dbname=gcc200409537', 'gcc200409537', 'Cux1iFxKPy');
+//$db = new PDO('mysql:host=aws.computerstudi.es;dbname=gcc200409537', 'gcc200409537', 'x');
 
 // loosefoot
-$db = new PDO('mysql:host=mysql7.loosefoot.com;dbname=musicdb', 'comp1006g', 'Lakehead2019');
+$db = new PDO('mysql:host=mysql7.loosefoot.com;dbname=musicdb', 'comp1006g', 'x');
 if (!$db)  {
     echo 'could not connect';
 }

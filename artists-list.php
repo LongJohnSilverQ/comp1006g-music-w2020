@@ -8,7 +8,7 @@
 
 <?php
 // 1. Connect to the db.  Host: 172.31.22.43, DB: dbNameHere, Username: usernameHere, PW: passwordHere
-$db = new PDO('mysql:host=172.31.22.43;dbname=Rich100', 'Rich100', 'Vda787-KJ_');
+$db = new PDO('mysql:host=172.31.22.43;dbname=Rich100', 'Rich100', 'x');
 
 //  2. Write the SQL Query to read all the records from the artists table and store in a variable ; is optional at the end
 $query = "Select * from artists;";

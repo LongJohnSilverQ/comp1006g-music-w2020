@@ -15,8 +15,8 @@ $website = $_POST['website'];
 echo $name;
 
 // connect to db
-$db = new PDO('mysql:host=172.31.22.43;dbname=Rich100', 'Rich100', 'Vda787-KJ_');
-//$db = new PDO('mysql:host=mysql7.loosefoot.com;dbname=musicdb', 'comp1006g', 'Lakehead2019');
+$db = new PDO('mysql:host=172.31.22.43;dbname=Rich100', 'Rich100', 'x');
+//$db = new PDO('mysql:host=mysql7.loosefoot.com;dbname=musicdb', 'comp1006g', 'x');
 
 // set up the SQL INSERT command - use 3 paramter placeholders for the values (prefixed with :)
 $sql = "INSERT INTO artists (name, yearFounded, website) VALUES (:name, :yearFounded, :website)";

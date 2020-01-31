@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fd5f966-d2f8-49e8-a481-f2f8da5f60b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/artist-details.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artist-dropdown.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artist-details.php" beforeDir="false" afterPath="$PROJECT_DIR$/artist-details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/artist.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artists-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/artists-list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artists-unformatted.php" beforeDir="false" afterPath="$PROJECT_DIR$/artists-unformatted.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connection-test.php" beforeDir="false" afterPath="$PROJECT_DIR$/connection-test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/save-artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/save-artist.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,17 +23,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1WWfY4qp9joLVkfoGJQV7eyGQ2j" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Documents/Teaching/COMP2083/lessons-GC-4VC8VP2/Lesson3/git-teamwork" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="ServiceViewManager">
@@ -60,18 +62,23 @@
       <option name="presentableId" value="Default" />
       <updated>1579270315751</updated>
       <workItem from="1579270317578" duration="5664000" />
-      <workItem from="1579873638797" duration="5798000" />
+      <workItem from="1579873638797" duration="6525000" />
+      <workItem from="1580138006157" duration="38000" />
+      <workItem from="1580477360109" duration="5010000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="550" y="157" key="FileChooserDialogImpl" timestamp="1579271532957">
+    <state x="550" y="157" key="FileChooserDialogImpl" timestamp="1580138041532">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="550" y="157" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1579271532957" />
+    <state x="550" y="157" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580138041532" />
     <state x="605" y="344" key="NewPhpFileDialog" timestamp="1579879481412">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

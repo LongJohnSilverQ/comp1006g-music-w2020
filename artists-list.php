@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Artist List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-
+<h1>Artist List</h1>
 <?php
 // 1. Connect to the db.  Host: 172.31.22.43, DB: dbNameHere, Username: usernameHere, PW: passwordHere
-$db = new PDO('mysql:host=172.31.22.43;dbname=Rich100', 'Rich100', 'x');
+$db = new PDO('mysql:host=172.31.22.43;dbname=Rich100', 'Rich100', '');
 
 //  2. Write the SQL Query to read all the records from the artists table and store in a variable ; is optional at the end
 $query = "Select * from artists;";
@@ -21,7 +22,7 @@ $cmd->execute();
 $artists = $cmd->fetchAll();
 
 // 4a. Create a grid with a header row
-echo '<table border="1"><thead><th>Name</th><th>Year Founded</th><th>Website</th></thead>';
+echo '<table class="table table-striped table-hover"><thead><th>Name</th><th>Year Founded</th><th>Website</th></thead>';
 
 // 5. Use a foreach loop to iterate (cycle) through all the values in the $artists variable.  Inside this loop, use an echo command to display the name of each person.  See https://www.php.net/manual/en/control-structures.foreach.php for details.
 foreach ($artists as $value) {

@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fd5f966-d2f8-49e8-a481-f2f8da5f60b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/artist.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artists-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/artists-list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delete-artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/delete-artist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/save-artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/save-artist.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -43,6 +44,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Documents/Teaching/COMP2083/lessons-GC-4VC8VP2/Lesson3/git-teamwork" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="ServiceViewManager">
@@ -71,7 +73,7 @@
       <workItem from="1579873638797" duration="6525000" />
       <workItem from="1580138006157" duration="38000" />
       <workItem from="1580477360109" duration="6172000" />
-      <workItem from="1581081232383" duration="6317000" />
+      <workItem from="1581081232383" duration="8317000" />
     </task>
     <servers />
   </component>

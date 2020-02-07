@@ -41,7 +41,7 @@ if (!empty($website)) {
 
 if ($ok) {
     // connect to db
-    $db = new PDO('mysql:host=172.31.22.43;dbname=Rich100', 'Rich100', '');
+    $db = new PDO('mysql:host=172.31.22.43;dbname=Rich100', 'Rich100', 'V');
 //$db = new PDO('mysql:host=mysql7.loosefoot.com;dbname=musicdb', 'comp1006g', 'x');
 
 // set up the SQL INSERT command - use 3 paramter placeholders for the values (prefixed with :)

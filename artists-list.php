@@ -9,7 +9,7 @@
 <h1>Artist List</h1>
 <?php
 // 1. Connect to the db.  Host: 172.31.22.43, DB: dbNameHere, Username: usernameHere, PW: passwordHere
-$db = new PDO('mysql:host=172.31.22.43;dbname=Rich100', 'Rich100', '');
+$db = new PDO('mysql:host=172.31.22.43;dbname=Rich100', 'Rich100', 'V');
 
 //  2. Write the SQL Query to read all the records from the artists table and store in a variable ; is optional at the end
 $query = "Select * from artists;";
@@ -27,8 +27,12 @@ echo '<table class="table table-striped table-hover"><thead><th>Name</th><th>Yea
 // 5. Use a foreach loop to iterate (cycle) through all the values in the $artists variable.  Inside this loop, use an echo command to display the name of each person.  See https://www.php.net/manual/en/control-structures.foreach.php for details.
 foreach ($artists as $value) {
     // could use this but it's unclear and error prone: echo $value[1];
-    echo '<tr><td>' . $value['name'] . '</td><td>' . $value['yearFounded'] . '</td><td>' .
-        '<a href="' . $value['website'] . '" target="_new">' . $value['website'] . '</a></td></tr>';
+    echo '<tr><td>' . $value['name'] . '</td>
+        <td>' . $value['yearFounded'] . '</td>
+        <td>' . '<a href="' . $value['website'] . '" target="_new">' . $value['website'] . '</a></td>
+        <td><a href="delete-artist.php?artistId=' . $value['artistId'] . '" class="btn btn-danger"
+            onclick="return confirmDelete();">Delete</a></td>
+        </tr>';
 }
 
 // 5a. End the HTML table
@@ -37,6 +41,9 @@ echo '</table>';
 // 6. Disconnect from the database
 $db = null;
 ?>
+
+<!-- js -->
+<script src="js/scripts.js" type="text/javascript"></script>
 
 </body>
 </html>

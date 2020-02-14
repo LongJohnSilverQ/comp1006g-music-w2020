@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fd5f966-d2f8-49e8-a481-f2f8da5f60b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/save-registration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/artist.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artists-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/artists-list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delete-artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/delete-artist.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Documents/Teaching/COMP2083/lessons-GC-4VC8VP2/Lesson3/git-teamwork" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
@@ -73,7 +74,11 @@
       <workItem from="1579873638797" duration="6525000" />
       <workItem from="1580138006157" duration="38000" />
       <workItem from="1580477360109" duration="6172000" />
-      <workItem from="1581081232383" duration="8317000" />
+      <workItem from="1581081232383" duration="8386000" />
+      <workItem from="1581353230801" duration="679000" />
+      <workItem from="1581525129578" duration="117000" />
+      <workItem from="1581628320639" duration="694000" />
+      <workItem from="1581686267864" duration="2571000" />
     </task>
     <servers />
   </component>
@@ -84,14 +89,15 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="550" y="157" key="FileChooserDialogImpl" timestamp="1580138041532">
+    <state x="925" y="192" key="FileChooserDialogImpl" timestamp="1581525218577">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="925" y="192" key="FileChooserDialogImpl/0.0.1536.824/3840.0.1680.1010@0.0.1536.824" timestamp="1581525218577" />
     <state x="550" y="157" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580138041532" />
-    <state x="605" y="344" key="NewPhpFileDialog" timestamp="1581081919281">
+    <state x="605" y="344" key="NewPhpFileDialog" timestamp="1581687525433">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="605" y="344" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1581081919281" />
+    <state x="605" y="344" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1581687525433" />
     <state x="281" y="58" key="SettingsEditor" timestamp="1579271696641">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

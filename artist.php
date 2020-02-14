@@ -1,4 +1,13 @@
 <?php
+// auth check
+session_start();
+
+// make this page private
+if (empty($_SESSION['userId'])) {
+    header('location:login.php');
+    exit();
+}
+
 // are we adding or editing?  if editing, get the selected artist to populate the form
 // initialize variables for each field
 $artistId = null;
@@ -11,7 +20,7 @@ if (!empty($_GET['artistId'])) {
     $artistId = $_GET['artistId'];
 
     // connect
-    $db = new PDO('mysql:host=172.31.22.43;dbname=Rich100', 'Rich100', 'x');
+    $db = new PDO('mysql:host=172.31.22.43;dbname=Rich100', 'Rich100', 'V');
 
     // fetch the selected artist
     $sql = "SELECT * FROM artists WHERE artistId = :artistId";

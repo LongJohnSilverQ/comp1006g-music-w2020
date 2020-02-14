@@ -7,11 +7,20 @@
 <body>
 
 <?php
+// auth check
+session_start();
+
+// make this page private
+if (empty($_SESSION['userId'])) {
+    header('location:login.php');
+    exit();
+}
+
 // parse the artistId from the url parameter
 $artistId = $_GET['artistId'];
 
 // connect
-$db = new PDO('mysql:host=172.31.22.43;dbname=Rich100', 'Rich100', 'x');
+$db = new PDO('mysql:host=172.31.22.43;dbname=Rich100', 'Rich100', 'V');
 
 // create the SQL DELETE command
 $sql = "DELETE FROM artists WHERE artistId = :artistId";

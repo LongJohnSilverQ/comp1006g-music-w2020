@@ -44,7 +44,7 @@ if ($ok) {
     //echo $password;
 
     // connect
-    $db = new PDO('mysql:host=172.31.22.43;dbname=Rich100', 'Rich100', 'V');
+    require_once 'db.php';
 
     // duplicate check before insert
     $sql = "SELECT * FROM users WHERE username = :username";

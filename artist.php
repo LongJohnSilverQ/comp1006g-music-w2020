@@ -1,12 +1,13 @@
 <?php
-// auth check
-session_start();
+$title = 'Artist Details';
+require_once ('header.php');
 
 // make this page private
-if (empty($_SESSION['userId'])) {
-    header('location:login.php');
-    exit();
-}
+require_once 'auth.php';
+//if (empty($_SESSION['userId'])) {
+//    header('location:login.php');
+//    exit();
+//}
 
 // are we adding or editing?  if editing, get the selected artist to populate the form
 // initialize variables for each field
@@ -20,7 +21,7 @@ if (!empty($_GET['artistId'])) {
     $artistId = $_GET['artistId'];
 
     // connect
-    $db = new PDO('mysql:host=172.31.22.43;dbname=Rich100', 'Rich100', 'V');
+    require_once 'db.php';
 
     // fetch the selected artist
     $sql = "SELECT * FROM artists WHERE artistId = :artistId";
@@ -39,17 +40,6 @@ if (!empty($_GET['artistId'])) {
 }
 ?>
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Artist Details</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
     <h1>Artist Details</h1>
     <form action="save-artist.php" method="post">
         <fieldset>
@@ -69,5 +59,7 @@ if (!empty($_GET['artistId'])) {
         <input name="artistId" id="artistId" value="<?php echo $artistId; ?>" type="hidden" />
         <button class="btn btn-primary offset-sm-2">Save</button>
     </form>
-</body>
-</html>
+
+<?php
+require_once 'footer.php';
+?>

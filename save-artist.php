@@ -10,6 +10,9 @@
 <h1>Attempting to Save Artist</h1>
 
 <?php
+session_start();
+require_once 'auth.php';
+
 // save the form inputs to variables (optional but recommended)
 $name = htmlspecialchars($_POST['name']);
 $yearFounded = $_POST['yearFounded'];
@@ -42,8 +45,7 @@ if (!empty($website)) {
 
 if ($ok) {
     // connect to db
-    $db = new PDO('mysql:host=172.31.22.43;dbname=Rich100', 'Rich100', 'V');
-    //$db = new PDO('mysql:host=mysql7.loosefoot.com;dbname=musicdb', 'comp1006g', 'x');
+    require_once 'db.php';
 
     // adding or editing depending if we already have an artistId or not
     if (empty($artistId)) {

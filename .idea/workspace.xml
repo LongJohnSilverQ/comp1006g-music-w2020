@@ -2,14 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fd5f966-d2f8-49e8-a481-f2f8da5f60b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/long-page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample-header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/artist.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artists-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/artists-list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/delete-artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/delete-artist.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save-artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/save-artist.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/save-registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/save-registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/validate.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../eval" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
@@ -80,7 +91,9 @@
       <workItem from="1581353230801" duration="679000" />
       <workItem from="1581525129578" duration="117000" />
       <workItem from="1581628320639" duration="694000" />
-      <workItem from="1581686267864" duration="6938000" />
+      <workItem from="1581686267864" duration="7041000" />
+      <workItem from="1581791535515" duration="131000" />
+      <workItem from="1583500283051" duration="7768000" />
     </task>
     <servers />
   </component>
@@ -91,15 +104,15 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="925" y="192" key="FileChooserDialogImpl" timestamp="1581525218577">
+    <state x="550" y="157" key="FileChooserDialogImpl" timestamp="1581791692029">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="925" y="192" key="FileChooserDialogImpl/0.0.1536.824/3840.0.1680.1010@0.0.1536.824" timestamp="1581525218577" />
-    <state x="550" y="157" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580138041532" />
-    <state x="605" y="344" key="NewPhpFileDialog" timestamp="1581695184061">
+    <state x="550" y="157" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581791692029" />
+    <state x="605" y="344" key="NewPhpFileDialog" timestamp="1583508483653">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="605" y="344" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1581695184061" />
+    <state x="605" y="344" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1583508483653" />
     <state x="281" y="58" key="SettingsEditor" timestamp="1579271696641">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

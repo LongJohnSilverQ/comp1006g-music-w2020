@@ -7,14 +7,6 @@
 <body>
 
 <?php
-// auth check
-session_start();
-
-// make this page private
-if (empty($_SESSION['userId'])) {
-    header('location:login.php');
-    exit();
-}
 
 // store form inputs in variables
 $username = $_POST['username'];
@@ -43,33 +35,38 @@ if ($ok) {
     $password = password_hash($password, PASSWORD_DEFAULT);
     //echo $password;
 
-    // connect
-    require_once 'db.php';
+    try {
+        // connect
+        require_once 'db.php';
 
-    // duplicate check before insert
-    $sql = "SELECT * FROM users WHERE username = :username";
-    $cmd = $db->prepare($sql);
-    $cmd->bindParam(':username', $username, PDO::PARAM_STR, 50);
-    $cmd->execute();
-    $user = $cmd->fetch();
-
-    if (!empty($user)) {
-        echo 'Username already exists<br />';
-    }
-    else {
-        // set up & run insert
-        $sql = "INSERT INTO users (username, password) VALUES (:username, :password)";
+        // duplicate check before insert
+        $sql = "SELECT * FROM users WHERE username = :username";
         $cmd = $db->prepare($sql);
         $cmd->bindParam(':username', $username, PDO::PARAM_STR, 50);
-        $cmd->bindParam(':password', $password, PDO::PARAM_STR, 255);
         $cmd->execute();
+        $user = $cmd->fetch();
+
+        if (!empty($user)) {
+            echo 'Username already exists<br />';
+        } else {
+            // set up & run insert
+            $sql = "INSERT INTO users (username, password) VALUES (:username, :password)";
+            $cmd = $db->prepare($sql);
+            $cmd->bindParam(':username', $username, PDO::PARAM_STR, 50);
+            $cmd->bindParam(':password', $password, PDO::PARAM_STR, 255);
+            $cmd->execute();
+        }
+
+        // disconnect
+        $db = null;
+
+        // redirect to login page
+        header('location:login.php');
     }
-
-    // disconnect
-    $db = null;
-
-    // redirect to login page
-    header('location:login.php');
+    catch (Exception $e) {
+        header('location:error.php');
+        exit();
+    }
 }
 ?>
 

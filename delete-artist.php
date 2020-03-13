@@ -20,24 +20,31 @@ require_once 'auth.php';
 // parse the artistId from the url parameter
 $artistId = $_GET['artistId'];
 
-// connect
-require_once 'db.php';
+try {
+    // connect
+    require_once 'db.php';
 
-// create the SQL DELETE command
-$sql = "DELETE FROM artists WHERE artistId = :artistId";
+    // create the SQL DELETE command
+    $sql = "DELETE FROM artists WHERE artistId = :artistId";
 
-// pass the artistId parameter to the command
-$cmd = $db->prepare($sql);
-$cmd->bindParam(':artistId', $artistId, PDO::PARAM_INT);
+    // pass the artistId parameter to the command
+    $cmd = $db->prepare($sql);
+    $cmd->bindParam(':artistId', $artistId, PDO::PARAM_INT);
 
-// execute the deletion
-$cmd->execute();
+    // execute the deletion
+    $cmd->execute();
 
-// disconnect
-$db = null;
+    // disconnect
+    $db = null;
 
-// redirect back to updated artists-list page
-header('location:artists-list.php');
+    // redirect back to updated artists-list page
+    header('location:artists-list.php');
+}
+catch (Exception $e) {
+    header('location:error.php');
+    exit();
+}
+
 ?>
 
 </body>

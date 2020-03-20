@@ -18,8 +18,10 @@ $name = htmlspecialchars($_POST['name']);
 $yearFounded = $_POST['yearFounded'];
 $website = htmlspecialchars($_POST['website']);
 $artistId = $_POST['artistId']; // has value when editing, empty when adding
+$photo = $_FILES['photo'];
+$photoName = null;
 
-echo $name;
+//echo $name;
 
 // validate inputs
 $ok = true;
@@ -43,6 +45,23 @@ if (!empty($website)) {
     }
 }
 
+if (!empty($photo['tmp_name'])) {
+    $photoName = $photo['name'];
+    $tmp_name = $photo['tmp_name'];
+    $type = mime_content_type($tmp_name);
+
+    // check type
+    if ($type != 'image/jpeg' && $type != 'image/png') {
+        echo 'Photo must be a .jpg or .png file';
+        $ok = false;
+        exit();
+    }
+
+    // use the session to generate a unique name and save photo to img/artists folder
+    $photoName = session_id() . '-' . $photoName;
+    move_uploaded_file($tmp_name, "img/artists/$photoName");
+}
+
 if ($ok) {
     try {
         // connect to db
@@ -50,10 +69,10 @@ if ($ok) {
 
         // adding or editing depending if we already have an artistId or not
         if (empty($artistId)) {
-            // set up the SQL INSERT command - use 3 paramter placeholders for the values (prefixed with :)
-            $sql = "INSERT INTO artists (name, yearFounded, website) VALUES (:name, :yearFounded, :website)";
+            // set up the SQL INSERT command - use 4 parameter placeholders for the values (prefixed with :)
+            $sql = "INSERT INTO artists (name, yearFounded, website, photo) VALUES (:name, :yearFounded, :website, :photo)";
         } else {
-            $sql = "UPDATE artists SET name = :name, yearFounded = :yearFounded, website = :website WHERE artistId = :artistId";
+            $sql = "UPDATE artists SET name = :name, yearFounded = :yearFounded, website = :website, photo = :photo WHERE artistId = :artistId";
         }
 
         // create a PDO command object and fill the parameters 1 at a time for type & safety checking
@@ -61,6 +80,7 @@ if ($ok) {
         $cmd->bindParam(':name', $name, PDO::PARAM_STR, 50);
         $cmd->bindParam(':yearFounded', $yearFounded, PDO::PARAM_INT);
         $cmd->bindParam(':website', $website, PDO::PARAM_STR, 100);
+        $cmd->bindParam(':photo', $photoName, PDO::PARAM_STR, 100);
 
         // if we have an artistId, we need to bind the 4th parameter (but only if we have an id already)
         if (!empty($artistId)) {

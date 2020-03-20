@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fd5f966-d2f8-49e8-a481-f2f8da5f60b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/browse-file.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload-file.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/before.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/otriuo2aq3fjrakdq09sebrpe7-before.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/u9i84ha4c95161gp4ooaimlb6m-before.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/u9i84ha4c95161gp4ooaimlb6m-black-bean-soup.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/artists/u9i84ha4c95161gp4ooaimlb6m-black-bean-soup.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/artists/u9i84ha4c95161gp4ooaimlb6m-green-day.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/artists/u9i84ha4c95161gp4ooaimlb6m-pearl-jam.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/artists/u9i84ha4c95161gp4ooaimlb6m-sandwich-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/artists/u9i84ha4c95161gp4ooaimlb6m-the-beatles.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/artists/u9i84ha4c95161gp4ooaimlb6m-the-lumineers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/artists/u9i84ha4c95161gp4ooaimlb6m-twenty-one-pilots.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/artist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artists-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/artists-list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save-artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/save-artist.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +93,7 @@
       <workItem from="1583935797388" duration="713000" />
       <workItem from="1584040850647" duration="2490000" />
       <workItem from="1584104593008" duration="3179000" />
-      <workItem from="1584710377482" duration="2565000" />
+      <workItem from="1584710377482" duration="5805000" />
     </task>
     <servers />
   </component>
